@@ -40,15 +40,15 @@ public class Main {
         System.out.println("Задание 9");
         int savings = 29000;
         int capital = 0;
-        for (int i =0; i<12; i++) {
-            capital = capital + capital / 100;
+        for (int i =1; i<=12; i++) {
             capital = capital + savings;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + capital);
+            capital = capital + capital / 100;
+            System.out.println("Месяц " + i + " - сумма накоплений равна " + capital);
         }
         System.out.println("Задание 10");
         int number = 2;
         for (int i =1;i<=10;i++) {
-            System.out.println(number*i);
+            System.out.println(number + "*" + i + "=" + number*i);
         }
     }
 }
